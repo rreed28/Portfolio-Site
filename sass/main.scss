@@ -1,3 +1,78 @@
-nav {
-	color: red;
+// ALL
+@import 'variables';
+
+*{}
+
+// HEADER
+#bg-header-image {
+	background: url('../images/header/header.jpg');
+	height: 250px;
+	position: relative;
+	color: $white;
+	text-shadow: 1px 1px 2px $dark_blue;
+	font-family: $titilium;
+	#text-header {
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		a {
+			text-decoration: none;
+			color: $white;
+		}
+		.name-header {
+			font-size: 44px;
+		    line-height: 46px;
+		    text-transform: uppercase;
+		}
+		.job-header {
+			font-size: 30px;
+			line-height: 32px;
+			font-weight: 300;
+			margin-right: 10px;
+		}
+		.image-header {
+			vertical-align: text-bottom;
+			width: 28px;
+			height: 28px;
+			text-shadow: 1px 1px 2px $dark_blue;
+		}
+		.phone-header {
+			font-size: 26px;
+			line-height: 32px;
+			font-weight: lighter;
+		}
+	}
 }
+
+// NAVIGATION
+
+nav {
+background: $teal;
+font-family: $titilium;
+	#navigation-main {
+		display: flex;
+		justify-content: space-evenly;
+		li {
+			list-style: none;
+			a {
+				text-decoration: none;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 22px;
+    			line-height: 55px;
+			}
+			a:hover {
+
+			}
+		}
+	}
+}
+
+
+
+
+
+
