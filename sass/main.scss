@@ -3,6 +3,9 @@
 
 *{}
 
+body {
+	background-color: $background;
+}
 // HEADER
 #bg-header-image {
 	background: url('../images/header/header.jpg');
@@ -17,7 +20,6 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-
 		a {
 			text-decoration: none;
 			color: $white;
@@ -48,7 +50,6 @@
 }
 
 // NAVIGATION
-
 nav {
 background: $teal;
 font-family: $titilium;
@@ -68,6 +69,68 @@ font-family: $titilium;
 
 			}
 		}
+	}
+}
+
+// FOOTER
+
+footer {
+	font-family: $titilium;
+	#top-footer {
+		background: $pink;
+		margin-bottom: -40px;
+	    position: relative;
+	    padding: 20px 0;
+	    .callout-text {
+	    	color: $white;
+	    	text-align: center;
+	    	font-size: 20px;
+	    }
+	}
+	#main-footer {
+		background: $dark_blue;
+		padding: 70px 0 40px 0px;
+		.navigation-footer {
+			display: flex;
+			justify-content: space-evenly;
+			list-style: none;
+			padding-bottom: 20px;
+			li a {
+				text-decoration: none;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 20px;
+				line-height: 24px;
+			}
+		}
+		.footer-social {
+			display: flex;
+		    justify-content: space-evenly;
+		    list-style: none;
+		    width: 40%;
+		    padding-bottom: 30px;
+			img {
+				width: 45px;
+			}
+		}
+		.credits {
+			text-align: center;
+			color: $white;
+			font-size: 10px;
+			line-height: 10px;
+		}
+	}
+}
+
+// PORTFOLIO MAIN
+
+#portfolio-main {
+	#portfolio-list {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
 	}
 }
 
