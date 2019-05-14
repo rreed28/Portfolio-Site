@@ -1,0 +1,18 @@
+// PORTFOLIO MAIN
+
+#portfolio-main {
+	margin: 20px 0;
+	a:hover .hover-text {
+		display: contents;
+	}
+	.item {
+		height: 300px;
+		width: 30%;
+		.hover-text {
+			display: none;
+		}
+	}
+	.proj-1 {
+		background: url('../images/portfolio/HayRide.png')
+	}
+}

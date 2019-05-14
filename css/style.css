@@ -1,6 +1,50 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700|Titillium+Web:300,400,700");
+#portfolio-main {
+  margin: 20px 0; }
+  #portfolio-main a:hover .hover-text {
+    display: contents; }
+  #portfolio-main .item {
+    height: 300px;
+    width: 30%; }
+    #portfolio-main .item .hover-text {
+      display: none; }
+  #portfolio-main .proj-1 {
+    background: url("../images/portfolio/HayRide.png"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
-  background-color: #F3F7F6; }
+  background-color: #F3F7F6;
+  font-family: "Titillium Web", sans-serif; }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; } }
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; } }
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; } }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; } }
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
 
 #bg-header-image {
   background: url("../images/header/header.jpg");
@@ -56,9 +100,15 @@ footer {
   font-family: "Titillium Web", sans-serif; }
   footer #top-footer {
     background: #B4313F;
+    border-radius: 8px;
     margin-bottom: -40px;
     position: relative;
-    padding: 20px 0; }
+    padding: 15px 0; }
+    footer #top-footer img {
+      margin: 0 auto;
+      display: block;
+      width: 40px;
+      padding: 20px 0; }
     footer #top-footer .callout-text {
       color: #F3F7F6;
       text-align: center;
@@ -90,9 +140,8 @@ footer {
       color: #F3F7F6;
       font-size: 10px;
       line-height: 10px; }
-
-#portfolio-main #portfolio-list img {
-  width: 100%;
-  height: 100%; }
+      footer #main-footer .credits a {
+        color: #F3F7F6;
+        text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
