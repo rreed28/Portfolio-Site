@@ -3,13 +3,33 @@
   margin: 20px 0; }
   #portfolio-main a:hover .hover-text {
     display: contents; }
+  #portfolio-main .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0; }
+    #portfolio-main .row .flexbox-item {
+      width: 31.3%;
+      margin: 1em 1%; }
   #portfolio-main .item {
-    height: 300px;
-    width: 30%; }
+    height: 400px; }
     #portfolio-main .item .hover-text {
       display: none; }
   #portfolio-main .proj-1 {
-    background: url("../images/portfolio/HayRide.png"); }
+    background: url("../images/portfolio/Hayride.png"); }
+  #portfolio-main .proj-2 {
+    background: url("../images/portfolio/MantraSys.png"); }
+  #portfolio-main .proj-3 {
+    background: url("../images/portfolio/Responsive.png"); }
+  #portfolio-main .proj-4 {
+    background: url("../images/portfolio/Creative.png"); }
+  #portfolio-main .proj-5 {
+    background: url("../images/portfolio/TapNGo.png"); }
+  #portfolio-main .proj-6 {
+    background: url("../images/portfolio/Design.png"); }
+  #portfolio-main .proj-7 {
+    background: url("../images/portfolio/Sub.jpg"); }
+  #portfolio-main .proj-8 {
+    background: url("../images/portfolio/Sub.jpg"); }
 
 * {
   margin: 0;
@@ -45,6 +65,10 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+
+h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2.5em; }
 
 #bg-header-image {
   background: url("../images/header/header.jpg");

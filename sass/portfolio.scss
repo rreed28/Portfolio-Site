@@ -5,14 +5,43 @@
 	a:hover .hover-text {
 		display: contents;
 	}
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 20px 0;
+		.flexbox-item {
+			width: 31.3%;
+			margin: 1em 1%;
+		}
+	}
 	.item {
-		height: 300px;
-		width: 30%;
+		height: 400px;
 		.hover-text {
 			display: none;
 		}
 	}
 	.proj-1 {
-		background: url('../images/portfolio/HayRide.png')
+		background: url('../images/portfolio/Hayride.png');
+	}
+	.proj-2 {
+		background: url('../images/portfolio/MantraSys.png');
+	}
+	.proj-3 {
+		background: url('../images/portfolio/Responsive.png');
+	}
+	.proj-4 {
+		background: url('../images/portfolio/Creative.png');
+	}
+	.proj-5 {
+		background: url('../images/portfolio/TapNGo.png');
+	}
+	.proj-6 {
+		background: url('../images/portfolio/Design.png');
+	}
+	.proj-7 {
+		background: url('../images/portfolio/Sub.jpg');
+	}
+	.proj-8 {
+		background: url('../images/portfolio/Sub.jpg');
 	}
 }
