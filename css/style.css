@@ -1,36 +1,80 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700|Titillium+Web:300,400,700");
 #portfolio-main {
-  margin: 20px 0; }
+  margin: 2em 0; }
   #portfolio-main a:hover .hover-text {
     display: contents; }
   #portfolio-main .row {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 20px 0; }
     #portfolio-main .row .flexbox-item {
       width: 31.3%;
-      margin: 1em 1%; }
+      margin: 1em 1%;
+      text-decoration: none;
+      transition: 0.3s; }
+    #portfolio-main .row .flexbox-item:hover {
+      text-decoration: none; }
+      #portfolio-main .row .flexbox-item:hover .hover-text {
+        display: none; }
+  #portfolio-main .proj-info {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    top: 35%;
+    padding: 0 50px;
+    transition: 0.3s; }
+  #portfolio-main .hover-text {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s; }
   #portfolio-main .item {
-    height: 400px; }
-    #portfolio-main .item .hover-text {
-      display: none; }
-  #portfolio-main .proj-1 {
-    background: url("../images/portfolio/Hayride.png"); }
-  #portfolio-main .proj-2 {
-    background: url("../images/portfolio/MantraSys.png"); }
-  #portfolio-main .proj-3 {
-    background: url("../images/portfolio/Responsive.png"); }
-  #portfolio-main .proj-4 {
-    background: url("../images/portfolio/Creative.png"); }
-  #portfolio-main .proj-5 {
-    background: url("../images/portfolio/TapNGo.png"); }
-  #portfolio-main .proj-6 {
-    background: url("../images/portfolio/Design.png"); }
-  #portfolio-main .proj-7 {
-    background: url("../images/portfolio/Sub.jpg"); }
-  #portfolio-main .proj-8 {
-    background: url("../images/portfolio/Sub.jpg"); }
+    height: 300px; }
+  #portfolio-main .icon img {
+    margin-top: 5px;
+    width: 35px; }
+  #portfolio-main .proj-1, #portfolio-main .proj-2, #portfolio-main .proj-3, #portfolio-main .proj-4, #portfolio-main .proj-5, #portfolio-main .proj-6 {
+    background: linear-gradient(0deg, #b4313f, #08415c); }
+  #portfolio-main .proj-1:hover {
+    background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/HayRide.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  #portfolio-main .proj-2:hover {
+    background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/MantraSys.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  #portfolio-main .proj-3:hover {
+    background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/Responsive.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  #portfolio-main .proj-4:hover {
+    background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/Creative.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  #portfolio-main .proj-5:hover {
+    background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/TapNGo.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  #portfolio-main .proj-6:hover {
+    background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/Design.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
 
+@media (max-width: 770px) {
+  .flexbox-item {
+    width: 48%; } }
+@media (max-width: 600px) {
+  .flexbox-item {
+    width: 100%; } }
 * {
   margin: 0;
   padding: 0;

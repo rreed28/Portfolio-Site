@@ -1,47 +1,107 @@
 // PORTFOLIO MAIN
 
 #portfolio-main {
-	margin: 20px 0;
+	margin: 2em 0;
 	a:hover .hover-text {
 		display: contents;
 	}
 	.row {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 20px 0;
-		.flexbox-item {
-			width: 31.3%;
-			margin: 1em 1%;
+	  display: flex;
+	  flex-direction: row;
+	  flex-wrap: wrap;
+	  margin: 20px 0;
+	  .flexbox-item {
+		  width: 31.3%;
+		  margin: 1em 1%;
+		  text-decoration: none;
+		  transition: 0.3s;
+		}
+		.flexbox-item:hover {
+			text-decoration: none;
+			.hover-text {
+				display: none;
+			}
 		}
 	}
+	.proj-info {
+	  text-align: center;
+	  overflow: hidden;
+	  position: relative;
+	  top: 35%;
+	  padding: 0 50px;
+	  transition: 0.3s;
+	}
+	.hover-text {
+	  color: #fff;
+	  font-size: 22px;
+	  font-weight: 400;
+	  text-transform: uppercase;
+	  letter-spacing: 1px;
+	  transition: 0.3s;
+	}
+
 	.item {
-		height: 400px;
-		.hover-text {
-			display: none;
-		}
+		height: 300px;
 	}
-	.proj-1 {
-		background: url('../images/portfolio/Hayride.png');
+	.icon img {
+	  margin-top: 5px;
+	  width: 35px;
 	}
-	.proj-2 {
-		background: url('../images/portfolio/MantraSys.png');
+	.proj-1, .proj-2, .proj-3, .proj-4, .proj-5, .proj-6 {
+		background: linear-gradient(0deg,rgba(180,49,63,1),rgba(8,65,92,1));
 	}
-	.proj-3 {
-		background: url('../images/portfolio/Responsive.png');
+	.proj-1:hover {
+		background: url('https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/HayRide.png');
+	    background-position: center center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
 	}
-	.proj-4 {
-		background: url('../images/portfolio/Creative.png');
+	.proj-2:hover {
+		background: url('https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/MantraSys.png');
+	    background-position: center center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
 	}
-	.proj-5 {
-		background: url('../images/portfolio/TapNGo.png');
+	.proj-3:hover {
+		background: url('https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/Responsive.png');
+	    background-position: center center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
 	}
-	.proj-6 {
-		background: url('../images/portfolio/Design.png');
+	.proj-4:hover {
+		background: url('https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/Creative.png');
+	    background-position: center center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
 	}
-	.proj-7 {
-		background: url('../images/portfolio/Sub.jpg');
+	.proj-5:hover {
+		background:url('https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/TapNGo.png');
+	    background-position: center center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
 	}
-	.proj-8 {
-		background: url('../images/portfolio/Sub.jpg');
+	.proj-6:hover {
+		background: url('https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/Design.png');
+	    background-position: center center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
 	}
 }
+
+
+
+@media (max-width: 770px) {
+  .flexbox-item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 600px) {
+  .flexbox-item {
+    width: 100%;
+  }
+}
+
+
+
+
