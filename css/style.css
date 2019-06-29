@@ -3,77 +3,225 @@
   margin: 2em 0; }
   #portfolio-main a:hover .hover-text {
     display: contents; }
-  #portfolio-main .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 20px 0; }
-    #portfolio-main .row .flexbox-item {
-      width: 31.3%;
-      margin: 1em 1%;
-      text-decoration: none;
-      transition: 0.3s; }
-    #portfolio-main .row .flexbox-item:hover {
-      text-decoration: none; }
-      #portfolio-main .row .flexbox-item:hover .hover-text {
-        display: none; }
-  #portfolio-main .proj-info {
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-    top: 35%;
-    padding: 0 50px;
-    transition: 0.3s; }
-  #portfolio-main .hover-text {
-    color: #fff;
-    font-size: 22px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: 0.3s; }
-  #portfolio-main .item {
-    height: 300px; }
-  #portfolio-main .icon img {
-    margin-top: 5px;
-    width: 35px; }
-  #portfolio-main .proj-1, #portfolio-main .proj-2, #portfolio-main .proj-3, #portfolio-main .proj-4, #portfolio-main .proj-5, #portfolio-main .proj-6 {
-    background: linear-gradient(0deg, #b4313f, #08415c); }
-  #portfolio-main .proj-1:hover {
-    background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/HayRide.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat; }
-  #portfolio-main .proj-2:hover {
-    background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/MantraSys.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat; }
-  #portfolio-main .proj-3:hover {
-    background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/Responsive.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat; }
-  #portfolio-main .proj-4:hover {
-    background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/Creative.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat; }
-  #portfolio-main .proj-5:hover {
-    background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/TapNGo.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat; }
-  #portfolio-main .proj-6:hover {
-    background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/Design.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+  #portfolio-main h1 {
+    font-size: 3em;
+    line-height: 2em;
+    text-align: center; }
 
-@media (max-width: 770px) {
-  .flexbox-item {
-    width: 48%; } }
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2em 0; }
+  .row .item {
+    z-index: 1;
+    position: relative;
+    width: 31.3%;
+    margin: .8% 1%; }
+    .row .item img {
+      transition: .25s ease-in-out;
+      border-radius: 12px;
+      width: 100%; }
+    .row .item .overlay {
+      position: relative; }
+      .row .item .overlay .proj-info {
+        display: none;
+        text-decoration: none; }
+    .row .item .overlay:before {
+      background: none; }
+    .row .item .overlay:hover:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      background: rgba(1, 22, 56, 0.9);
+      -moz-transition: all .3s linear;
+      -webkit-transition: all .3s linear;
+      -ms-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear;
+      z-index: 2; }
+    .row .item .overlay:hover .proj-info {
+      display: flex;
+      z-index: 4;
+      position: absolute;
+      flex-direction: column;
+      text-decoration: none;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .row .item .button-port {
+      border: 3px solid #fff;
+      padding: .8em;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 100px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1em;
+      margin-top: 1.5em; }
+    .row .item .button-port:hover {
+      background: #fff;
+      color: #011638; }
+    .row .item .proj-info .hover-text {
+      color: #fff;
+      font-size: 1.5em;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center; }
+
+#proj-top {
+  margin: 3em 0 5em 0; }
+
+h1 {
+  text-align: center; }
+
+.top-main-port {
+  display: flex;
+  margin: 3em 0; }
+
+.port-left {
+  width: 40%;
+  margin-right: 5%;
+  position: relative;
+  transition: .25s ease-in-out; }
+
+.port-left img {
+  width: 100%;
+  border-radius: 12px;
+  transition: .25s ease-in-out; }
+
+.port-right {
+  width: 55%; }
+
+.kidz-order {
+  margin: 1em 0 1em 3em; }
+
+.icons-list-top {
+  background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/home/BG-Skills.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  margin: 5em 0 3em 0; }
+
+.icons-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline; }
+
+.icons-list li {
+  list-style: none;
+  align-self: center; }
+
+.icons-list li img {
+  height: 160px; }
+
+.bottom-port-pages {
+  margin: 0 0 4em 0; }
+
+.bottom-port-pages h3 {
+  font-size: 2.5em;
+  text-align: center; }
+
+.skills-check {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1em;
+  margin-left: 1em; }
+
+.skills-check li {
+  width: 31.3%;
+  margin: .7% 0 .7% 2%;
+  list-style: none;
+  position: relative;
+  font-size: 1.8em;
+  font-weight: 700; }
+
+.skills-check li:before {
+  background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/portfolio/check.png") no-repeat;
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-position: 0px 0px;
+  background-size: contain;
+  margin-left: -40px;
+  margin-top: 10px; }
+
+.overlay:before {
+  background: none; }
+
+.overlay:hover:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: rgba(1, 22, 56, 0.9);
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  z-index: 2; }
+
+.proj-info {
+  display: none;
+  text-decoration: none; }
+
+.overlay:hover .proj-info {
+  display: flex;
+  z-index: 4;
+  position: absolute;
+  flex-direction: column;
+  text-decoration: none;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.proj-info .hover-text {
+  color: #fff;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: center; }
+
+.proj-info .button-port {
+  border: 3px solid #fff;
+  padding: 1em;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-top: 1em; }
+
+.button-port:hover {
+  background: #fff;
+  color: #011638; }
+
+.portfolio-sub ol a:hover,
+.portfolio-sub p a:hover {
+  background-color: #011638;
+  color: #fff; }
+
+/* MEDIA QUERIES */
 @media (max-width: 600px) {
-  .flexbox-item {
+  .row .item {
     width: 100%; } }
 * {
   margin: 0;
@@ -91,6 +239,20 @@ body {
   margin-right: auto;
   margin-left: auto; }
 
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2.5em; }
+
+.center-btn {
+  text-align: center; }
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px; } }
@@ -103,17 +265,6 @@ body {
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px; } }
-.container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto; }
-
-h1 {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 2.5em; }
-
 #bg-header-image {
   background: url("../images/header/header.jpg");
   height: 250px;
@@ -164,6 +315,98 @@ nav {
         font-size: 22px;
         line-height: 55px; }
 
+#achievement-main {
+  margin: 3em 0; }
+  #achievement-main h2 {
+    font-size: 2.6em;
+    text-align: center; }
+
+.top-callout {
+  background-color: #118AB2;
+  color: white;
+  font-size: 1.6em;
+  font-weight: 400;
+  padding: 1.5em 0; }
+  .top-callout img {
+    width: 120px;
+    margin-right: 2em;
+    float: left; }
+
+.cert-box-rows {
+  margin: 3em 0 1em 0;
+  display: flex;
+  flex-wrap: wrap; }
+  .cert-box-rows .cert-box {
+    background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/Cert/Background-button.png");
+    width: 48%;
+    height: 120px;
+    text-decoration: none;
+    position: relative;
+    margin: 1em 0;
+    display: block;
+    border-radius: 12px; }
+  .cert-box-rows .cert-box:nth-child(odd) {
+    margin-right: 2%; }
+  .cert-box-rows .cert-box:hover span {
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0 -.8em;
+    color: #011638; }
+  .cert-box-rows .cert-box span {
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin: 0 -.5em;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.certificates {
+  margin: 3em 0; }
+  .certificates p {
+    text-align: center;
+    font-size: 1.2em; }
+
+.icons-list-top {
+  background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/home/BG-Skills.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  margin: 5em 0 3em 0; }
+
+.icons-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline; }
+  .icons-list li {
+    list-style: none;
+    align-self: center; }
+    .icons-list li img {
+      height: 160px; }
+
+.letters-of-rec p {
+  text-align: center;
+  font-size: 1.2em; }
+.letters-of-rec .btn-rec {
+  border: none;
+  width: 80%;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2em;
+  padding: .8em;
+  margin: 1em 0;
+  border-radius: 12px;
+  transition: .35s;
+  background-color: #118AB2;
+  color: #fff; }
+.letters-of-rec .btn-rec:hover {
+  background-color: #6B818C;
+  transform: scale(1.1); }
+
 footer {
   font-family: "Titillium Web", sans-serif; }
   footer #top-footer {
@@ -211,5 +454,57 @@ footer {
       footer #main-footer .credits a {
         color: #F3F7F6;
         text-decoration: none; }
+
+@media (max-width: 1005px) {
+  #bg-header-image #text-header .name-header {
+    font-size: 40px; }
+  #bg-header-image #text-header .job-header {
+    font-size: 28px;
+    line-height: 30px; }
+  #bg-header-image #text-header .phone-header {
+    font-size: 24px;
+    line-height: 30px; } }
+@media (max-width: 915px) {
+  #bg-header-image #text-header .name-header {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center; }
+  #bg-header-image #text-header .image-header {
+    width: 32px;
+    height: 32px; }
+  #bg-header-image #text-header .job-header {
+    font-size: 28px;
+    line-height: 30px;
+    display: block;
+    text-align: center; }
+  #bg-header-image #text-header .phone-header {
+    font-size: 26px;
+    line-height: 30px; }
+  #bg-header-image #text-header .phone-number-block {
+    text-align: center;
+    display: block;
+    margin: 5px 0; } }
+@media (max-width: 770px) {
+  #bg-header-image #text-header {
+    position: relative;
+    top: 50%; }
+
+  nav #navigation-main li a {
+    font-size: 20px; }
+
+  footer #main-footer .navigation-footer li a {
+    font-size: 16px; } }
+@media (max-width: 600px) {
+  nav #navigation-main {
+    flex-direction: column;
+    text-align: center; }
+    nav #navigation-main li {
+      border: 1px solid #011638;
+      padding: 5px 0; }
+    nav #navigation-main li a {
+      font-size: 22px; }
+
+  footer #main-footer .footer-social {
+    width: 60%; } }
 
 /*# sourceMappingURL=style.css.map */
