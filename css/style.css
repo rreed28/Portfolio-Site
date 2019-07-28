@@ -435,10 +435,7 @@ nav {
     .icons-list li img {
       height: 160px; }
 
-.letters-of-rec p {
-  text-align: center;
-  font-size: 1.2em; }
-.letters-of-rec .btn-rec {
+.btn-rec {
   border: none;
   width: 80%;
   font-family: "Titillium Web", sans-serif;
@@ -449,7 +446,8 @@ nav {
   transition: .35s;
   background-color: #118AB2;
   color: #fff; }
-.letters-of-rec .btn-rec:hover {
+
+.btn-rec:hover {
   background-color: #6B818C;
   transform: scale(1.1); }
 
