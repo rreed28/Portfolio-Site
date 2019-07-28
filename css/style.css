@@ -337,6 +337,8 @@ nav {
 
 #home-page h2 {
   text-align: center; }
+#home-page .left-align {
+  text-align: left; }
 
 .top-about {
   margin: 4em 0 5em 0;
