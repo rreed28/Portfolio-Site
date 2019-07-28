@@ -3,10 +3,6 @@
   margin: 2em 0; }
   #portfolio-main a:hover .hover-text {
     display: contents; }
-  #portfolio-main h1 {
-    font-size: 3em;
-    line-height: 2em;
-    text-align: center; }
 
 .row {
   display: flex;
@@ -79,9 +75,6 @@
 #proj-top {
   margin: 3em 0 5em 0; }
 
-h1 {
-  text-align: center; }
-
 .top-main-port {
   display: flex;
   margin: 3em 0; }
@@ -101,7 +94,12 @@ h1 {
   width: 55%; }
 
 .kidz-order {
-  margin: 1em 0 1em 3em; }
+  margin: 1em 0 1em 3em;
+  font-size: 1.2em; }
+
+.portfolio-unordered-list {
+  margin: 1em 0 1em 3em;
+  font-size: 1.2em; }
 
 .icons-list-top {
   background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/home/BG-Skills.png") no-repeat;
@@ -247,8 +245,22 @@ body {
   margin-left: auto; }
 
 h1 {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 2.5em; }
+  font-size: 3em;
+  line-height: 2.5em;
+  text-align: center; }
+
+h2 {
+  font-size: 2.6em; }
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2em; }
+
+h4 {
+  font-size: 2em; }
+
+p {
+  font-size: 1.2em; }
 
 .center-btn {
   text-align: center; }
@@ -266,7 +278,7 @@ h1 {
   .container {
     max-width: 1140px; } }
 #bg-header-image {
-  background: url("../images/header/header.jpg");
+  background: url("https://raw.githubusercontent.com/rreed28/Rachel-Portfolio/master/images/header/header.jpg");
   height: 250px;
   position: relative;
   color: #F3F7F6;
