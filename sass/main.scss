@@ -271,10 +271,13 @@ font-family: $titilium;
         transition: .35s;
         background-color: #118AB2;
         color: #fff;
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
     }
     .btn-rec:hover {
         background-color: #6B818C;
-        transform: scale(1.1);
     }
 
 // RESUME

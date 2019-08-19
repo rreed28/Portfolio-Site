@@ -445,11 +445,14 @@ nav {
   border-radius: 12px;
   transition: .35s;
   background-color: #118AB2;
-  color: #fff; }
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  text-align: center; }
 
 .btn-rec:hover {
-  background-color: #6B818C;
-  transform: scale(1.1); }
+  background-color: #6B818C; }
 
 #resume-page {
   margin: 4em 0 4em 0; }
