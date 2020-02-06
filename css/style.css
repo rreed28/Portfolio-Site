@@ -228,7 +228,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: 100%; }
 
 body {
   background-color: #F3F7F6;
