@@ -528,6 +528,11 @@ footer {
 }
 
 @media (max-width: 600px) {
+//HEADINGS
+  h1 {
+    line-height: 1.5em;
+    margin: 1em 0;
+  }
 //NAVIGATION
     nav {
         #navigation-main {
@@ -546,6 +551,25 @@ footer {
 	footer #main-footer .footer-social {
 		width: 60%;
 	}
+// MAIN PAGE IMAGES
+  .top-about .image-self img {
+    width: 100%;
+  }
+//ICONS on MAIN
+  .icons-list {
+    flex-direction: column;
+      li img {
+        height: 8em;
+      }
+  }
+  .icons-list-top {
+      height: 500px;
+  }
+//FOOTER
+  footer #main-footer .navigation-footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 

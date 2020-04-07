@@ -623,6 +623,10 @@ footer {
   footer #main-footer .navigation-footer li a {
     font-size: 16px; } }
 @media (max-width: 600px) {
+  h1 {
+    line-height: 1.5em;
+    margin: 1em 0; }
+
   nav #navigation-main {
     flex-direction: column;
     text-align: center; }
@@ -633,6 +637,21 @@ footer {
       font-size: 22px; }
 
   footer #main-footer .footer-social {
-    width: 60%; } }
+    width: 60%; }
+
+  .top-about .image-self img {
+    width: 100%; }
+
+  .icons-list {
+    flex-direction: column; }
+    .icons-list li img {
+      height: 8em; }
+
+  .icons-list-top {
+    height: 500px; }
+
+  footer #main-footer .navigation-footer {
+    flex-direction: column;
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
